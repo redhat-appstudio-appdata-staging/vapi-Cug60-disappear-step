@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: vapi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-engineering-jech-tenant/vapi/vapi@sha256:27e478a2fea126bd51133d14a51c01e79c60db50573a07a85459344f185a6a18
+        name: container-image
+        resources: {}
+status: {}
